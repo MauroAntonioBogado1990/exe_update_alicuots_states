@@ -5,8 +5,9 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//form/header" position="inside">
-                <button name="action_sync_alicuotas_from_padron" type="object" string="Actualizar Alicuotas provinciales" class="btn btn-primary"/>
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <!-- green button -->
+                <button name="action_sync_alicuotas_from_padron" type="object" string="Actualizar Alicuotas provinciales" class="btn btn-success"/>
             </xpath>
         </field>
     </record>
