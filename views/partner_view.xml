@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_inherit_alicuotas" model="ir.ui.view">
+        <field name="name">res.partner.form.alicuotas.header</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/header" position="inside">
+                <button name="action_sync_alicuotas_from_padron" type="object" string="Actualizar Alicuotas provinciales" class="btn btn-primary"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
